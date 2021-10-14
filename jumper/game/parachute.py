@@ -43,10 +43,3 @@ class Parachute():
             self.parachute.pop()
         else:
             self.parachute[-1] = self.parachute[-1].replace('o', 'x')
-
-# TESTS
-new = Parachute()
-new.cut_line()
-text = new.get_parachute()
-
-print(text)

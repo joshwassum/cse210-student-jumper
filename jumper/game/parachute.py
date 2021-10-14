@@ -17,7 +17,7 @@ class Parachute():
             self (Parachute): An instance of Parachute.
         """
 
-        self.parachute = [" / \\"," /|\\","  o", " \ /","\\   /","/___\\"," ___"]
+        self.parachute = ["^^^^^^^",""," / \\"," /|\\","  o", " \ /","\\   /","/___\\"," ___"]
 
     def get_parachute(self):
         """Creates a string of the parachute for display.

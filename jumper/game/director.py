@@ -32,6 +32,17 @@ class Director():
             self.do_updates()
             self.do_outputs()
 
+    def do_updates(self):
+        """gets the updates for the game.
+
+        Args:
+            self (Director): an instance of Director.
+        """
+
+        self.get_inputs()
+        self.do_outputs()
+        
+
     def do_outputs(self):
         '''Outputs the important game information for each round of play.
         '''

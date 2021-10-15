@@ -49,8 +49,12 @@ class Director():
             self (Director): an instance of Director.
         """
 
+
         self.guesser.get_secret_word()
         #self.do_outputs()
+        self.get_inputs()
+        self.do_outputs()
+        
 
 
     def do_outputs(self):

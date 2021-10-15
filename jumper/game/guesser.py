@@ -66,6 +66,7 @@ class Guesser():
             self (Guesser): An instance of Guesser.
             letter: The letter the Guesser guesses.
         '''
+
         if letter in self.secret_word:
             return True
         else:
@@ -85,5 +86,8 @@ class Guesser():
         message = (f"There are {count} {letter}'s")
 
         return message
+
+        letter = guess
+
         
          

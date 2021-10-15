@@ -35,6 +35,8 @@ class Guesser():
         for str in self.secret_word:
             self.guessed_word.append('_ ')
 
+        print(self.secret_word)
+
     def get_secret_word(self):
         """Creates a string of the hidden word for display.
 
@@ -64,6 +66,28 @@ class Guesser():
             self (Guesser): An instance of Guesser.
             letter: The letter the Guesser guesses.
         '''
+
+        if letter in self.secret_word:
+            return True
+        else:
+            return False
+        
+
+    def reveal_letter(self, letter):
+        
+        word = list(self.secret_word)
+        count = 0
+
+        for i in range(len(word)):
+            if word[i] == letter:
+                self.guessed_word[i] = letter + " "
+                count += 1
+            
+        message = (f"There are {count} {letter}'s")
+
+        return message
+
         letter = guess
+
         
          

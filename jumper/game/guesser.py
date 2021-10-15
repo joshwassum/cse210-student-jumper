@@ -55,3 +55,15 @@ class Guesser():
         '''
         guess = "Guess a letter: "
         return guess
+
+    def letter_check(self, letter):
+        '''Checks the users letter guess a letter with a true or false then return
+        
+        Returns text to prompt user to guess a letter.
+        Args:
+            self (Guesser): An instance of Guesser.
+            letter: The letter the Guesser guesses.
+        '''
+        letter = guess
+        
+         

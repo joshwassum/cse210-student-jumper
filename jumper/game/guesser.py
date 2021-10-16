@@ -51,7 +51,9 @@ class Guesser():
 
     def user_guess(self):
         '''Ask the user to guess a letter that the director will send to the console to print.
-        
+        Args:
+            self (Guesser): An instance of Guesser.
+
         Returns text to prompt user to guess a letter.
         '''
         guess = "Guess a letter: "
@@ -73,6 +75,14 @@ class Guesser():
         
 
     def reveal_letter(self, letter):
+        """Reveals the letter under neath the parashute.
+
+        Returns the message of how many letters and the letter that are in the secret word.
+
+        Args:
+        self (Guesser): An instance of Guesser.
+            letter: The letter the Guesser guesses.  
+        """
         
         word = list(self.secret_word)
         count = 0

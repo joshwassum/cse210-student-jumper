@@ -59,6 +59,8 @@ class Director():
         
     def do_outputs(self):
         '''Outputs the important game information for each round of play.
+        Args:
+            self (Director): An instance of Guesser.
         '''
 
         if self.parachute.parachute[-1].strip() == "x" or "_ " not in self.guesser.guessed_word:

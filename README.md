@@ -42,3 +42,4 @@ Brian Bawden brianbawden@gmail.com
 
 Larry Copeland cop21004@byui.edu
 
+Shane Wocicki woc13001@byui.edu

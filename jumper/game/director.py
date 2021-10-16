@@ -63,13 +63,23 @@ class Director():
     def do_outputs(self):
         '''Outputs the important game information for each round of play.
         '''
-        
+        complete = self.guesser.word_check()
         #self.console.write(self.parachute.get_parachute()) 
 
         #self.console.write(self.guesser.get_secret_word())
         if self.parachute.parachute[-1].strip() == "x":
             self.keep_playing = False
             self.console.write(self.parachute.get_parachute())
+            self.console.write(self.guesser.get_secret_word())
+
+        if complete:
+            self.keep_playing = False
+            self.console.write(self.parachute.get_parachute())
+            self.console.write(self.guesser.get_secret_word())
+
+
+
+
            
 
     def get_inputs(self):

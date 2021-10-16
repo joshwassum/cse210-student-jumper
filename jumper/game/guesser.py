@@ -25,7 +25,7 @@ class Guesser():
             self (Guesser): An instance of Guesser.
         """
 
-        self. word_list = []
+        self.word_list = []
         for i in data_text:
             self.word_list.append(i.replace('\n', ''))
 
@@ -34,7 +34,10 @@ class Guesser():
         self.guessed_word = []
         for str in self.secret_word:
             self.guessed_word.append('_ ')
-
+        
+        self.completed_word = ""
+        for x in self.guessed_word:
+            self.completed_word += x
         print(self.secret_word)
 
     def get_secret_word(self):
@@ -87,7 +90,13 @@ class Guesser():
 
         return message
 
-        letter = guess
+    def word_check(self):
+        print (self.completed_word)
+        if self.completed_word == self.secret_word:
+            return True
+        else:
+            return False
+        
 
         
          

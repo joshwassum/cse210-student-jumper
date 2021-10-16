@@ -34,11 +34,7 @@ class Guesser():
         self.guessed_word = []
         for str in self.secret_word:
             self.guessed_word.append('_ ')
-        
-        self.completed_word = ""
-        for x in self.guessed_word:
-            self.completed_word += x
-        print(self.secret_word)
+
 
     def get_secret_word(self):
         """Creates a string of the hidden word for display.
@@ -89,14 +85,3 @@ class Guesser():
         message = (f"There are {count} {letter}'s")
 
         return message
-
-    def word_check(self):
-        print (self.completed_word)
-        if self.completed_word == self.secret_word:
-            return True
-        else:
-            return False
-        
-
-        
-         

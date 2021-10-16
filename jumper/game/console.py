@@ -1,5 +1,3 @@
-
-
 class Console:
     """A code template for a computer console. The responsibility of this 
     class of objects is to get text input and display text output.

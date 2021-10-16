@@ -49,7 +49,6 @@ class Director():
             self (Director): an instance of Director.
         """
 
-
         self.guesser.get_secret_word()
         
         if self.letter not in self.guesser.secret_word:
@@ -58,29 +57,16 @@ class Director():
             self.guesser.reveal_letter(self.letter)
         
         
-
-
     def do_outputs(self):
         '''Outputs the important game information for each round of play.
         '''
-        complete = self.guesser.word_check()
-        #self.console.write(self.parachute.get_parachute()) 
 
-        #self.console.write(self.guesser.get_secret_word())
-        if self.parachute.parachute[-1].strip() == "x":
-            self.keep_playing = False
-            self.console.write(self.parachute.get_parachute())
-            self.console.write(self.guesser.get_secret_word())
-
-        if complete:
+        if self.parachute.parachute[-1].strip() == "x" or "_ " not in self.guesser.guessed_word:
             self.keep_playing = False
             self.console.write(self.parachute.get_parachute())
             self.console.write(self.guesser.get_secret_word())
 
 
-
-
-           
 
     def get_inputs(self):
         """Gets the inputs at the beginning of each round of play. 

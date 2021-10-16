@@ -63,7 +63,7 @@ class Director():
         if self.guesser.letter_check(self.letter) == True:
             reveal = self.guesser.reveal_letter(self.letter)
             self.console.write(reveal)
-        if self.parachute.parachute[-1] == "x":
+        if self.parachute.parachute[-1].strip() == "x":
             self.keep_playing = False   
 
     def get_inputs(self):
